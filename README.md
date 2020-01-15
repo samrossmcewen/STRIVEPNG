@@ -4,3 +4,4 @@ The purpose of this repository is to provide a space for all STRIVE data analysi
 
 All usrs will have rights to make new folders or delete files, add new members and view all folders. 
 A line I wrote on my local computer
+README file for STRIVEhub repository
