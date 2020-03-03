@@ -1,1 +1,48 @@
-This file contains the raw data files in .csv for health facilities (sentinel sites)(point), catchment areas (polygons), suburbs (pologons)(for urban sites) and village (point) data. 
+## This file contains the raw data files in .csv for health facilities (sentinel sites)(point), catchment areas (polygons), suburbs (pologons)(for urban sites) and village (point) data. 
+
+## 030320 - STRIVE sentinel site point coordinates 
+install.packages("tidyverse")
+install.packages("maptools")
+install.packages("sf")
+library("ggplot2")
+library("maptools")
+library("sf")
+
+setwd("C:/Users/samuel.mcewen/Desktop/STRIVE Data/Population data/HDX_Papua New Guinea_Health Facilities")
+
+health_facility <- st_read("png_health_facilities.zip")
+st_geometry_type(health_facility)
+st_crs(health_facility)
+st_bbox(health_facility)
+Baro <- health_facility[c(435), c(1:11)]
+st_geometry_type(Baro)
+st_crs(Baro)
+st_bbox(Baro)
+Hohola <- health_facility[c(55), c(1:11)]
+st_geometry_type(Hohola)
+st_crs(Hohola)
+st_bbox(Hohola)
+Sausi <- health_facility[c(414), c(1:11)]
+st_geometry_type(Sausi)
+st_crs(Sausi)
+st_bbox(Sausi)
+Lemakot <- health_facility[c(443), c(1:11)]
+st_geometry_type(Lemakot)
+st_crs(Lemakot)
+st_bbox(Lemakot)
+East_cape <- health_facility[c(114), c(1:11)]
+st_geometry_type(Lemakot)
+st_crs(Lemakot)
+st_bbox(Lemakot)
+Karimui <- health_facility[c(327), c(1:11)]
+st_geometry_type(Karimui)
+st_crs(Karimui)
+st_bbox(Karimui)
+Kiunga <- health_facility[c(7), c(1:11)]
+st_geometry_type(Kiunga)
+st_crs(Kiunga)
+st_bbox(Kiunga)
+Buimo <- health_facility[c(344), c(1:11)]
+st_geometry_type(Buimo)
+st_crs(Buimo)
+st_bbox(Buimo)
